@@ -1,8 +1,7 @@
 package design_pattern.ch01.check03;
 
 public class Student {
-	private Professor advisor;
-	
+	private Professor advisor;	
 	
 	public Student() {
 		// TODO Auto-generated constructor stub
@@ -20,6 +19,4 @@ public class Student {
 	public String toString() {
 		return String.format("Student [advisor=%s]", advisor);
 	}
-	
-	
 }

@@ -7,7 +7,7 @@ public class TestMain {
 		Course c3 = new Course("Database");
 		Course c4 = new Course("Html");
 		
-		Student s1 = new Student("ÀÏÀÏÀÏ");
+		Student s1 = new Student("ë¼ë¼ë¼");
 		s1.registerCourse(c1);
 		s1.registerCourse(c3);
 		s1.registerCourse(c3);

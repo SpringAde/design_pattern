@@ -39,17 +39,17 @@ public class Course {
 	
 	public void registerStudent(Student student){
 		if(!students.contains(student)){
-			//System.out.println(student);	ÀÏÀÏÀÏ
-			//System.out.println(students);	[]
+			
+			
 			students.add(student);	
-			student.registerCourse(this);		// °ú¸ñ¿¡ ÇĞ»ıÀ» Ãß°¡ÇÏ¸é, µ¿½Ã¿¡ ÇĞ»ı¿¡°Ôµµ °ú¸ñÀ» Ãß°¡
+			student.registerCourse(this);		
 		}
 	}
 	
 	public void dropStudent(Student student){
 		if(students.contains(student)){
 			students.remove(student);
-			student.dropCourse(this);
+			student.dropCourse(this);	// ê³¼ëª©ì— í•™ìƒì„ ì¶”ê°€í•˜ë©´, ë™ì‹œì— í•™ìƒì—ê²Œë„ ê³¼ëª©ì„ ì¶”ê°€
 		}
 	}
 	

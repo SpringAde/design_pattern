@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class Student {
 	private String name;
-	private ArrayList<Course> courses;
-	
+	private ArrayList<Course> courses;	
 	
 	public Student() {
 		courses = new ArrayList<>();
@@ -13,8 +12,7 @@ public class Student {
 	
 	public Student(String name) {
 		this();
-		this.name = name;
-	}
+		this.name = name;	}
 
 
 	public void registerCourse(Course course){

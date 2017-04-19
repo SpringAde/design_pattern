@@ -12,14 +12,14 @@ public class Student {
 		courses = new ArrayList<>();
 	}
 	public Student(String name) {
-		this();		//courses = new ArrayList<>();¸¦ °¡Á®¿Í¾ß ÇÔÀ¸·Î½á...
+		this();	//courses = new ArrayList<>();ë¥¼ ê°€ì ¸ì™€ì•¼ í•¨ìœ¼ë¡œì¨...
 		this.name = name;
 	}
 	
 	public void registerCourse(Course course){		
 		if(!courses.contains(course)){
 			courses.add(course);
-			course.registerStudent(this);	// ÇĞ»ı¿¡°Ô °ú¸ñÀÌ Ãß°¡µÇ¸é °ú¸ñ¿¡°Ôµµ ±× ÇØ´ç ÇĞ»ıÀ» Ãß°¡
+			course.registerStudent(this);	// í•™ìƒì—ê²Œ ê³¼ëª©ì´ ì¶”ê°€ë˜ë©´ ê³¼ëª©ì—ê²Œë„ ê·¸ í•´ë‹¹ í•™ìƒì„ ì¶”ê°€	
 		}
 	}
 	

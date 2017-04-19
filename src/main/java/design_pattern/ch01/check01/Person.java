@@ -20,9 +20,5 @@ public class Person {
 	@Override
 	public String toString() {
 		return String.format("Person [phones=%s]", Arrays.toString(phones));
-	}
-
-	
-		
-	
+	}	
 }

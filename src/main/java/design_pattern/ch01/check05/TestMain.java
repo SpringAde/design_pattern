@@ -7,9 +7,9 @@ public class TestMain {
 		Course c3 = new Course("Database");
 		Course c4 = new Course("Html");
 		
-		Student std1 = new Student("ÀÏÀÏÀÏ");
-		Student std2 = new Student("ÀÌÀÌÀÌ");
-		Student std3 = new Student("»ï»ï»ï");
+		Student std1 = new Student("ì¼ì¼ì¼");
+		Student std2 = new Student("ì´ì´ì´");
+		Student std3 = new Student("ì‚¼ì‚¼ì‚¼");
 		
 		std1.registerCourse(c1);		
 		std1.registerCourse(c2);
@@ -35,7 +35,7 @@ public class TestMain {
 		prnSubject3(std3);
 		
 		prnStudent1(c1);
-		prnStudent2(c2);		// this¸¦ Âï¾îº¸ÀÚ..
+		prnStudent2(c2);		
 		
 		prnThis1(c4);
 		prnThis2(std2);
@@ -45,47 +45,45 @@ public class TestMain {
 
 	private static void prnThis1(Course c4) {
 		System.out.println("====================================");
-		System.out.println(c4.getTitle()+"À» ¼ö°­ÇÏ´Â ÇĞ»ıÀº?");
+		System.out.println(c4.getTitle()+"ì„ ìˆ˜ê°•í•˜ëŠ” í•™ìƒì€?");
 		System.out.println(c4.getStudents());
 		
 	}
 
 	private static void prnThis2(Student std2) {
 		System.out.println("*****************************");
-		System.out.println(std2.getName()+"ÀÇ ¼ö°­°ú¸ñÀº?");
+		System.out.println(std2.getName()+"ì˜ ìˆ˜ê°•ê³¼ëª©ì€?");
 		System.out.println(std2.getCourses());		
 		
 	}
 
 	private static void prnSubject1(Student std1) {
 		System.out.println("====================================");
-		System.out.println(std1.getName()+"ÀÇ ¼ö°­°ú¸ñÀº?");
+		System.out.println(std1.getName()+"ì˜ ìˆ˜ê°•ê³¼ëª©ì€?");
 		System.out.println(std1.getCourses());		
 	}
 	
 	private static void prnSubject2(Student std2) {
 		System.out.println("====================================");
-		System.out.println(std2.getName()+"ÀÇ ¼ö°­°ú¸ñÀº?");
+		System.out.println(std2.getName()+"ì˜ ìˆ˜ê°•ê³¼ëª©ì€?");
 		System.out.println(std2.getCourses());		
 	}
 	
 	private static void prnSubject3(Student std3) {
 		System.out.println("====================================");
-		System.out.println(std3.getName()+"ÀÇ ¼ö°­°ú¸ñÀº?");
+		System.out.println(std3.getName()+"ì˜ ìˆ˜ê°•ê³¼ëª©ì€?");
 		System.out.println(std3.getCourses());		
 	}
 	
 	private static void prnStudent1(Course c1) {
 		System.out.println("====================================");
-		System.out.println(c1.getTitle()+"À» ¼ö°­ÇÏ´Â ÇĞ»ıÀº?");
+		System.out.println(c1.getTitle()+"ì„ ìˆ˜ê°•í•˜ëŠ” í•™ìƒì€?");
 		System.out.println(c1.getStudents());
 	}
 	
 	private static void prnStudent2(Course c2) {
 		System.out.println("====================================");
-		System.out.println(c2.getTitle()+"À» ¼ö°­ÇÏ´Â ÇĞ»ıÀº?");
+		System.out.println(c2.getTitle()+"ì„ ìˆ˜ê°•í•˜ëŠ” í•™ìƒì€?");
 		System.out.println(c2.getStudents());
 	}
-
-	
 }

@@ -22,7 +22,5 @@ public class Professor {
 	@Override
 	public String toString() {
 		return String.format("Professor [student=%s]", student);
-	}
-	
-	
+	}	
 }
