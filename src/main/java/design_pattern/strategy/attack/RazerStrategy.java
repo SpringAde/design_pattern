@@ -4,8 +4,7 @@ public class RazerStrategy implements AttackStrategy {
 
 	@Override
 	public void attack() {
-		System.out.println("raser~");
-
+		System.out.println("razer~");
 	}
 
 }
