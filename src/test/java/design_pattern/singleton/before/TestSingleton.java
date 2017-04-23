@@ -1,4 +1,4 @@
-package design_pattern.singleton;
+package design_pattern.singleton.before;
 
 import static org.junit.Assert.*;
 

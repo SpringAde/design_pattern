@@ -9,7 +9,7 @@ public class User {
 	
 	public void print(){
 		Printer prn = Printer.getPrinter();		// 싱글턴 사용
-		prn.print(String.format("%s print using %s.", name, prn.toString()));
+		prn.print(String.format("%s using %s.", name, prn.toString()));
 	}
 	
 }
