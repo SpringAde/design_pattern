@@ -1,4 +1,4 @@
-package design_pattern.command;
+package design_pattern.command.before;
 
 public class Button {
 	private Lamp theLamp;
