@@ -27,6 +27,7 @@ public class Light {
 			System.out.println("반응없음");
 		}else if(state==Light.SLEEPING){
 			System.out.println("Light ON");
+			state = Light.OFF;
 		}else{
 			System.out.println("Light OFF");
 			state = Light.OFF;
