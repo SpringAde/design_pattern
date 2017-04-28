@@ -3,8 +3,8 @@ package design_pattern.factoryAbstract.after;
 public class Client {
 	
 	public static void main(String[] args) {
-		ElevatorFactory factory = null;
-		String vendorName = String.valueOf(VendorID.HYUNDAI);
+		ElevatorFactory factory = null;		
+		String vendorName = String.valueOf(VendorID.LG);		
 		VendorID vendorID = null;
 		
 		if(vendorName.equalsIgnoreCase("LG")){
@@ -13,16 +13,19 @@ public class Client {
 			vendorID = VendorID.SAMSUNG;
 		}else{
 			vendorID = VendorID.HYUNDAI;
-		}
+		}			
 		
 		factory = ElevatorFactoryFactory.getFactory(vendorID);
-		
+			
 		Door door = factory.createDoor();
 		Motor motor = factory.createMotor();
 		motor.setDoor(door);
 		
 		door.open();
 		motor.move(Direction.UP);
+		
+		
+		
 		
 	}
 
